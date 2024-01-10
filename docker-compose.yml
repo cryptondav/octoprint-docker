@@ -17,8 +17,8 @@ services:
     # you add a video device
     environment:
       - ENABLE_MJPG_STREAMER=true
-      - CAMERA_DEV=/dev/video0,/dev/video1
-      - MJPG_STREAMER_INPUT="-n -r 640x480"
+      - CAMERA_DEV=/dev/video0
+      - MJPG_STREAMER_INPUT=-n -r SXGA
   
   ####
   # uncomment if you wish to edit the configuration files of octoprint
